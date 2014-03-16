@@ -14,4 +14,6 @@ class StaticPagesController < ApplicationController
   def brands
   end
 
+  def contact
+  end
 end

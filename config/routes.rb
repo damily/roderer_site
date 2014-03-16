@@ -1,10 +1,16 @@
 RodererSite::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/help"
-  get "static_pages/about"
-  get "static_pages/brands"
-  get "static_pages/service"
-  get "static_pages/contact"
+  root  'static_pages#home'
+  match '/help',    to: 'static_pages#help',    via: 'get'
+  match '/about',   to: 'static_pages#about',   via: 'get'
+  match '/brands', to: 'static_pages#brands', via: 'get'
+  match '/service',    to: 'static_pages#service',    via: 'get'
+  match '/contact', to: 'static_pages#contact', via: 'get'
+#   get "static_pages/home"
+#   get "static_pages/help"
+#   get "static_pages/about"
+#   get "static_pages/brands"
+#   get "static_pages/service"
+#   get "static_pages/contact"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
