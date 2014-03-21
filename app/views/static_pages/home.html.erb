@@ -1,14 +1,35 @@
 <% provide(:title, 'Home') %>
-<div class="center hero-unit">
-  <h1>Home</h1>
-
-  <h2>
-    This is the home page for the
-    <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
-
-  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+<div class="center jumbotron">
+<%= link_to image_tag('hmphotoani.gif'), brands_path, id: "quality" %>
 </div>
-
-<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+<div class="container center">
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="">
+      <%= link_to image_tag('quality.gif'), brands_path, id: "quality" %>
+      <div class="caption">
+        <!--<h3>Thumbnail label</h3>-->
+        <p>At Roderer Shoes, we have an extensive collection of the industry's highest quality shoes and accessories.</p>
+      </div>
+    </div>
+  </div>
+<div class="col-sm-6 col-md-4">
+    <div class="">
+      <%= link_to image_tag('tradition.gif'), about_path, id: "tradition" %>
+      <div class="caption">
+        <!--<h3>Thumbnail label</h3>-->
+        <p>Consistency builds trust and no other shoe store has served Dayton longer or better than Roderer Shoes. Our unique commitment to serving the Dayton shoe customer began over 100 years ago with a man named George Roderer...</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="">
+      <%= link_to image_tag('service.gif'), service_path, id: "service" %>
+      <div class="caption">
+       <!-- <h3>Thumbnail label</h3>-->
+        <p>At Roderer shoes, we strive to offer our customers the highest quality customer service and the shoe industry's best promotional discounts and specials. We are always looking for the best ways to be your single source for footwar in the Dayton area!</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
