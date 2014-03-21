@@ -112,7 +112,8 @@ footer {
 
 /* Custom Banner */
 $bg-default      : #0f4b4c;
-$bg-highlight    : #be9c76;
+//$bg-highlight    : #be9c76;
+$bg-highlight	 : #d2c1a0;
 $col-default     : #ecf0f1;
 $col-highlight   : #ffffff;
 .navbar-default {
@@ -184,5 +185,5 @@ $col-highlight   : #ffffff;
 
 /* Custom CSS */
 .brands {
-  background-color: $bg-highlight; 
+  //background-color: $bg-highlight; 
 }
