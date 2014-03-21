@@ -172,3 +172,12 @@ $col-highlight   : #ffffff;
   border: 1px solid transparent;
 }
 
+/* Custom Carousel CSS */
+.carousel-inner {
+  .item {
+    text-align: center;
+    img {
+      margin: 0 auto;
+    }
+  }
+}

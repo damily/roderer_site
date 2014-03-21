@@ -1,6 +1,45 @@
 <% provide(:title, 'Home') %>
-<div class="center jumbotron">
+<!--<div class="center jumbotron">
 <%= link_to image_tag('hmphotoani.gif'), brands_path, id: "quality" %>
+</div>-->
+<div id="carousel-home" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner ">
+    <div class="item active">
+      <%= link_to image_tag('hmphotoani.gif'), brands_path, id: "quality" %>
+      <!--<div class="carousel-caption">
+	...
+      </div>-->
+    </div>
+    <div class="item">
+      <!--<%= link_to image_tag('hmphotoani.gif'), brands_path, id: "quality" %>-->
+      <img src="http://placehold.it/1140x358/be9c76/0f4b4c"/>
+      <!--<div class="carousel-caption">
+	...
+      </div>-->
+    </div>
+    <div class="item ">
+      <!--<%= link_to image_tag('hmphotoani.gif'), brands_path, id: "quality" %>-->
+      <img src="http://placehold.it/1140x358/0f4b4c/be9c76"/>
+      <!--<div class="carousel-caption">
+	...
+      </div>-->
+    </div>
+    </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
 </div>
 <div class="container center">
 <div class="row">

@@ -16,3 +16,12 @@
 //= require_tree .
 // Loads all Bootstrap javascripts
 //= require bootstrap
+$(document).ready(
+//   $('.carousel').carousel({
+//     interval: 10000
+//   })
+	   )
+
+  $('.carousel').carousel({
+    interval: 10000
+  })
