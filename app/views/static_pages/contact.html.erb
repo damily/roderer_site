@@ -3,17 +3,27 @@
   <h1>Contact Us</h1>
 
   <h2>
-    This is the home page for the
-    <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
+    (We're here for you!)
   </h2>
-<address>
+  <p>
+    Our friendly staff is readily available to help you and your entire family with all of your footwear and accessory needs. Feel free to call us during business hours or leave us a voice message if calling after hours. We will promptly return each message.
+  </p>
+
+</div>
+<div class="container center">
+<div class="row">
+<div class="col-md-6">
+    <div class="">
+      <address>
   <strong>Roderer Shoes</strong><br>
   5500 N Main St<br>
   Dayton, OH <br>
   <abbr title="Phone">P:</abbr> (937) 275-4911
 </address>
-  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <%= render 'layouts/google_map' %>
+  </div>
+  </div>
 </div>
-
-<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>

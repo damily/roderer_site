@@ -182,7 +182,18 @@ $col-highlight   : #ffffff;
     }
   }
 }
-
+/* line 82, /home/dan/.rvm/gems/ruby-2.1.1@railstutorial_rails_4_0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_carousel.scss */
+.carousel-control.left {
+  background-image: none;
+  background-repeat: repeat;
+}
+/* line 85, /home/dan/.rvm/gems/ruby-2.1.1@railstutorial_rails_4_0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_carousel.scss */
+.carousel-control.right {
+  left: auto;
+  right: 0;
+  background-image: none;
+  background-repeat: repeat;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -276,3 +287,10 @@ $col-highlight   : #ffffff;
 .brands {
   //background-color: $bg-highlight; 
 }
+
+/* Google Maps */
+  #map-canvas {
+    width: 500px;
+    height: 400px;
+    background-color: #CCC;
+  }

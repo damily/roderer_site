@@ -1,14 +1,50 @@
 <% provide(:title, 'Service') %>
-<div class="center jumbotron">
+<div class="jumbotron">
   <h1>Service</h1>
-
-  <h2>
-    This is the home page for the
-    <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
-  </h2>
-
-  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+  <h2>(and Promotions)</h2>
+   <div class="container center">
+    <div class="row">
+      <div class="col-md-6">
+	<div class="">
+	  <%= image_tag('SvcTop.gif', :alt => "Service") %>
+	</div>
+      </div>
+      <div class="col-md-6">
+      <div class="caption">
+        <!--<h3>Thumbnail label</h3>-->
+        <p>At Roderer Shoes, we strive to offer our customers the highest quality customer service and the shoe industry's best promotional discounts and specials. We are always looking for the best ways to be your single source for footwear in the Dayton area!</p>
+      </div>
+    </div>
+  </div>
+    </div>
 </div>
+<div class="container">
+<div class="row">
+  <div class="col-xs-6 col-sm-3">
+    <%= image_tag('SvcPhoto2.gif', :alt => "Tradition") %>
+  </div>
+  <div class="col-xs-6 col-sm-3">
+    <%= image_tag('SvcPhoto3.gif', :alt => "Tradition") %>
+  </div>
 
-<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+  <!-- Add the extra clearfix for only the required viewport -->
+  <div class="clearfix visible-xs"></div>
+
+  <div class="col-xs-6 col-sm-3">
+    <%= image_tag('SvcPhoto4.gif', :alt => "Tradition") %>
+  </div>
+  <div class="col-xs-6 col-sm-3">
+    <%= image_tag('SvcPhoto5.gif', :alt => "Tradition") %>
+  </div>
+</div>
+<div class="row">
+  <div class="">
+    <p>
+      We invite you to experience the level of service that has made Roderer shoes a Dayton ficture for over 100 years. Our commitment to the personal details, needs, and comfortable shopping experience of each and every customer sets Roderer shoes apart from the rest. It's a level of service that will keep you coming back!
+    </p>
+    <p>
+      Our periodic promotional offers on our already value pricing are designed to provide our customers valuable opportunities to share our discounts on some of the best shoes on the market today! Click on the link below to take advantage of our current promotion. We also invite you to subscribe to our email newsletter so our regular news and promotions can be delivered right to your computer!
+    </p>
+  </div>
+</div>
+</div>
