@@ -288,6 +288,12 @@ $col-highlight   : #ffffff;
   //background-color: $bg-highlight; 
 }
 
+ @media (handheld ) {
+   .banner-logo {
+     background-color: white;
+  }
+  }
+
 /* Google Maps */
   #map-canvas {
     width: 500px;
