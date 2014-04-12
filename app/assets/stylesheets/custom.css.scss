@@ -3,6 +3,10 @@
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
+$roderer-brown: #d2c1a0;
+$roderer-brown-light: #f6f2ec;
+$roderer-green: #0f4b4c;
+
 
 /* universal */
 
@@ -12,6 +16,7 @@ html {
 
 body {
   //padding-top: 60px;
+  background-color: $roderer-brown-light;
 }
 
 section {
@@ -288,6 +293,19 @@ $col-highlight   : #ffffff;
   //background-color: $bg-highlight; 
 }
 
+.col-sm-6, .col-md-4 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.content {
+  background-color: white;  
+}
+
+.footer {
+ margin-top: 45px; 
+}
+
  @media (handheld ) {
    .banner-logo {
      background-color: white;
@@ -299,4 +317,5 @@ $col-highlight   : #ffffff;
     width: 500px;
     height: 400px;
     background-color: #CCC;
+    margin-bottom: 15px;
   }
