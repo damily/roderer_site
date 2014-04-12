@@ -56,30 +56,56 @@
 <div class="row">
   <div class="col-sm-6 col-md-4">
     <div class="">
-      <%= link_to image_tag('quality.gif'), brands_path, id: "quality" %>
+     <!-- <%= link_to image_tag('quality.gif'), brands_path, id: "quality" %>-->
+     <h1>Quality</h1>
+<!--     <h2><%= link_to "Quality", brands_path, id: "quality" %></h2>-->
       <div class="caption">
         <!--<h3>Thumbnail label</h3>-->
         <p>At Roderer Shoes, we have an extensive collection of the industry's highest quality shoes and accessories.</p>
-      </div>
-    </div>
-  </div>
-<div class="col-sm-6 col-md-4">
-    <div class="">
-      <%= link_to image_tag('tradition.gif'), about_path, id: "tradition" %>
-      <div class="caption">
-        <!--<h3>Thumbnail label</h3>-->
-        <p>Consistency builds trust and no other shoe store has served Dayton longer or better than Roderer Shoes. Our unique commitment to serving the Dayton shoe customer began over 100 years ago with a man named George Roderer...</p>
+        <p><%= link_to "Learn more &raquo;".html_safe, brands_path, id: "quality", class: "btn btn-default", role: "button"%></p>
       </div>
     </div>
   </div>
   <div class="col-sm-6 col-md-4">
     <div class="">
-      <%= link_to image_tag('service.gif'), service_path, id: "service" %>
+    <h1>Tradition</h1>
+      <!--<%= link_to image_tag('tradition.gif'), about_path, id: "tradition" %>-->
       <div class="caption">
-       <!-- <h3>Thumbnail label</h3>-->
-        <p>At Roderer shoes, we strive to offer our customers the highest quality customer service and the shoe industry's best promotional discounts and specials. We are always looking for the best ways to be your single source for footwar in the Dayton area!</p>
+        <!--<h3>Thumbnail label</h3>-->
+        <p>Consistency builds trust and no other shoe store has served Dayton longer or better than Roderer Shoes. Our unique commitment to serving the Dayton shoe customer began over 100 years ago with a man named George Roderer...</p>
+        <p><%= link_to "Learn more &raquo;".html_safe, about_path, id: "tradition", class: "btn btn-default", role: "button"%></p>
       </div>
     </div>
   </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="">
+    <h1>Service</h1>
+      <!--<%= link_to image_tag('service.gif'), service_path, id: "service" %>-->
+      <div class="caption">
+       <!-- <h3>Thumbnail label</h3>-->
+        <p>At Roderer shoes, we strive to offer our customers the highest quality customer service and the shoe industry's best promotional discounts and specials. We are always looking for the best ways to be your single source for footwar in the Dayton area!</p>
+        <p><%= link_to "Learn more &raquo;".html_safe, service_path, id: "service", class: "btn btn-default", role: "button"%></p>
+      </div>
+    </div>
   </div>
+</div>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+     <h3>Hours</h3>
+     <%= render 'layouts/hours' %>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <h3>Contact Us</h3>
+     <%= render 'layouts/address_phone' %>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <h3>Subscribe</h3>
+      <!--<%= link_to image_tag('service.gif'), service_path, id: "service" %>-->
+      <div class="caption">
+       <!-- <h3>Thumbnail label</h3>-->
+        <p>Subscribe to our newsletter for updates and specials!</p>
+        <p><%= link_to "Subscribe &raquo;".html_safe, contact_path, id: "subsrcibe", class: "btn btn-default", role: "button"%></p>
+      </div>
+  </div>
+</div>
 </div>
